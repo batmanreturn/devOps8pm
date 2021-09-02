@@ -1,0 +1,78 @@
+CONCEPT -  GIT BRANCHES 
+
+Branch uses :
+    1. code experimentation
+    2. apply changes on existing code
+    3. testing the code
+    4. debugging the code
+
+Q. How to know the branch info ?
+
+# git branch
+
+or
+
+# git status
+
+Q. how to know the current branch info ?
+
+# git branch
+
+* indicates the current branch
+
+2nd : # git status
+
+    on branch <....>
+
+Q. How to create a branch?
+
+# git branch <br_name>
+
+Q. How to move into another branch ?
+
+# git checkout <br_name>
+
+Q. How to merge the changes into parent ?
+
+# git merge <br_name>
+
+    ** Usually, we merge the child branch into the parent.
+
+    case 1. Can you merge a child into another parent ?
+
+            yes, but there is high probability conflicts
+
+Q. How to delete the branch ?
+
+    ** we can only delete the child branches.
+
+    # git branch -d <br_name>
+
+Q. How to rename a branch ?
+
+    # git branch -m oldname newname
+
+Q. Can we rename a main or master branch ?
+
+    # yes
+
+    Note : normally in IT projects they void renaming the main or master branch.
+
+    # git branch
+
+error : git push
+fatal: incorrect_client_credentials: The client_id and/or client_secret passed are incorrect. [https://docs.github.com/apps/managing-oauth-apps/troubleshooting-oauth-app-access-token-request-errors/#incorrect-client-credentials]
+remote: No anonymous write access.
+fatal: Authentication failed for 'https://github.com/vijaygit12/firstrepo.git/'
+
+Logon failed, use ctrl+c to cancel basic credential prompt.
+error: unable to read askpass response from 'C:/Program Files/Git/mingw64/libexec/git-core/git-gui--askpass'
+Username for 'https://github.com':
+
+C:\Program Files\Git\git-bash.exe --cd-to-home
+
+Q. Do you think merge and push are the same ?
+
+push - local - to server
+
+merge - branch to LR
